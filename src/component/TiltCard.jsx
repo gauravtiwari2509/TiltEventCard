@@ -49,7 +49,7 @@ const TiltCard = (props) => {
         rotateX,
         rotateY,
       }}
-      className="relative  h-[550px] w-[472px] rounded-xl bg-gradient-to-br from-indigo-900 to-violet-500"
+      className=" relative  h-[550px] w-[472px] rounded-xl bg-gradient-to-br from-indigo-900 to-violet-500"
     >
       <div
         style={{
@@ -58,10 +58,11 @@ const TiltCard = (props) => {
         }}
         className="absolute inset-4 grid gap-y-4  place-items-center place-content-center text-white rounded-xl bg-indigo-950 shadow-lg"
       >
-        <img src={imgSrc} alt="img" className=" h-2/3 " />
+     
+        <img src={imgSrc} alt="img" className=" h-2/3 round-image" />
         <div className=" text-lg text-blue-200">{time}</div>
         <div className=" text-lg text-blue-200">{date}</div>
-        <button className=" rounded-md px-4 py-2  text-blue-200 border  bg-slate-900 border-gray-300 transform transition-transform hover:scale-105 focus:outline-none focus:ring focus:border-blue-300">
+        <button className="registerButton rounded-md px-4 py-2  text-blue-200 border  bg-slate-900 border-gray-300 transform transition-transform hover:scale-105 focus:outline-none focus:ring focus:border-blue-300">
           REGISTER
         </button>
       </div>

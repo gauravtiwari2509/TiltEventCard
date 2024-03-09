@@ -6,3 +6,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.cardCont{
+  background: rgb(24,0,85);
+  background: radial-gradient(circle, rgba(24,0,85,1) 0%, rgba(22,14,42,1) 100%);
+  
+}
+
+.round-image{
+  animation: rotateMotion 15s linear infinite;
+}
+
+@keyframes rotateMotion {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes flicker {
+  0%, 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+}
+
+
+.registerButton{
+  animation: flicker 2s infinite ease-in-out;
+}
